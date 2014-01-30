@@ -10,7 +10,7 @@ chown_source = :uespadmin -R ./
 chown_source = apache:uespadmin media
 chmod_source = g+rw,a+r -R ./
 
-createpath = /nome/uesp/blog/cache/
+createpath = /home/uesp/blog/cache/
 
 chown_dest = apache:uespadmin /home/uesp/blog/cache/
 chmod_dest = g+rw,a+r /home/uesp/blog/cache
