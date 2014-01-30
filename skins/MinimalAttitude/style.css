@@ -1,0 +1,356 @@
+/*
+ * Evo Toolbar
+ * Note: ther emay be some properties that seem overkill but the fact is we need to override
+ * any too general styles a skin may want to bring in for its own body/general display.
+ */
+div#evo_toolbar {
+   background-color: ThreeDFace;
+   color: ButtonText;
+   border-top: 1px solid ThreeDHighlight;
+   border-bottom: 1px solid ThreeDShadow;
+   text-align: left;
+   margin: 0;
+   /* font: menu; /* -- poorly supported */
+   font-size: 11px;
+   font-family: "Microsoft sans serif", sans-serif, Arial, Helvetica;
+
+   position: fixed;
+   z-index: 99;
+   left: 0px;
+   top: 0px;
+   height: 21px;
+   width:100%;      /* Safari Windows */
+   -webkit-text-size-adjust: none; /* iPhone */
+}
+
+div.skin_wrapper_loggedin {
+   margin-top: 22px;
+   padding-top: 1px;
+}
+
+div#evo_toolbar a {
+   border: 1px solid ThreeDFace;
+   color: ButtonText;
+   text-decoration: none;
+   padding: 2px 1ex;
+}
+div#evo_toolbar a:hover {
+   border-top-color: ThreeDHighlight;
+   border-left-color: ThreeDHighlight;
+   border-bottom-color: ThreeDShadow;
+   border-right-color: ThreeDShadow;
+}
+div#evo_toolbar .actions_left {
+   padding: 4px;
+}
+div#evo_toolbar .actions_right {
+   padding: 4px;
+   float: right;
+}
+
+div#evo_toolbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+div#evo_toolbar li {
+  display: inline;
+}
+div#evo_toolbar li ul {
+  position: absolute;
+   z-index: 100;
+   background-color: ThreeDFace;
+   border: 1px solid;
+   padding: 1px;
+   border-top-color: ThreeDHighlight;
+   border-left-color: ThreeDHighlight;
+   border-bottom-color: ThreeDShadow;
+   border-right-color: ThreeDShadow;
+   width: 25ex; /* prevent page wide dropdowns in IE6; nicer hover in IE7 */
+}
+div#evo_toolbar li.menu_open ul {
+   display: block;
+}
+div#evo_toolbar li.menu_close ul {
+   display: none;
+}
+div#evo_toolbar li.menu_open:hover ul,
+div#evo_toolbar li.menu_close:hover ul {
+   display: block;
+}
+div#evo_toolbar li ul li {
+   display: block;
+   padding: 0 4ex 0 0;
+   white-space: nowrap;
+}
+div#evo_toolbar li ul li a {
+   display: block;
+   padding: 4px 2ex;
+   border: none;
+   width: 100%;
+}
+div#evo_toolbar li ul li a:hover {
+   background-color: Highlight;
+   color: HighlightText;
+}
+div#evo_toolbar.evo_toolbar_safari li ul li a:hover {
+   background-color: #36d;
+}
+div#evo_toolbar li.separator {
+   padding: 0;
+}
+div#evo_toolbar hr {
+   display: block;
+}
+
+div#evo_toolbar .time {
+   margin: 0 1ex;
+   color: GrayText;
+}
+/* ---------------------------------------------- */
+* {
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	background: url(images/background.gif) repeat-x #ffffff;
+	color: #333333;
+	font-size: 8pt;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#wrap {
+	width: 940px;
+	background-color: #ffffff;
+	padding: 0px 20px;
+}
+#header {
+	padding-top: 10px;
+}
+#title {
+	text-align: left;
+	padding-left: 10px;
+	float: left;
+	margin-bottom: 15px;
+}
+#topright {
+	float: right;
+	padding-right: 10px;
+	margin-bottom: 15px;
+}
+#navigation {
+	background-color: #f7f7f7;
+	clear: both;
+	text-align: left;
+	color: #8dc63f;
+	font-size: 12pt;
+	font-weight: bold;
+	margin: 10px 0px;
+	padding: 10px;
+}
+#navigation ul li {
+	display: inline;
+	list-style: none;
+}
+#navigation li a {
+	color: #8dc63f;
+	padding-right: 15px;
+	text-decoration: none;
+}
+#navigation li a:hover {
+	color: #f7941d;
+	text-decoration: none;
+}
+#main {
+	width: 900px;
+	text-align: left;
+}
+#content {
+	width: 680px;
+	margin: 10px 200px 10px 0px;
+	text-align: left;
+
+}
+#sidebar {
+	width: 200px;
+	float: right;
+	margin-right: 10px 0px 10px 0px;
+	text-align: left;
+}
+.entry {
+	padding-left: 10px;
+}
+#footer {
+	clear: both;
+	padding: 10px 0px;
+	color: #666666;
+}
+/* font */
+#title h1 {
+	font-size: 18pt;
+	color: #0072bc;
+	font-weight: normal;
+}
+#title h1 a{
+	color: #0072bc;
+	text-decoration: none;
+}
+#content h1 a {
+	color: #0072bc;
+	text-decoration: none;
+}
+#content h1 {
+	color: #0072bc;
+	font-size: 14pt;
+	font-weight: normal;
+	padding-bottom: 5px;
+}
+#sidebar h2, h2, h4 {
+	color: #8dc63f;
+	font-size: 11pt;
+	padding-bottom: 5px;
+}
+#sidebar h2 a, h2 a, h4 a {
+	color: #8dc63f;
+	text-decoration: none;
+}
+#sidebar h2 {
+	padding-top: 5px;
+}
+
+h3, .bCommentTitle {
+	font-size: 10pt;.
+	color: #f7941d;
+}
+h3 a, .bCommentTitle a {
+	color: #f7941d;
+	text-decoration: none;
+}	
+.description {
+	color: #f7941d;
+	font-size: 12pt;
+	font-weight: bold;
+}
+p {
+	padding-bottom: 5px;
+}
+#content ul li, #content ol li {
+	margin-left: 35px;
+}
+#content ul, #content ol {
+	padding-bottom: 5px;
+}
+blockquote {
+	margin: 10px 10px 15px 0px;
+	color: #f7941d;
+	padding: 10px 0px 0px 45px;
+	background: url(images/background_blockquote.gif) left no-repeat top;
+}
+#content a {
+	color: #0072bc;
+}
+#content a:hover {
+	color: #8dc63f;
+	text-decoration: none;
+}
+#footer a {
+	color: #666666;
+	text-decoration: none;
+}
+.navigation {
+	padding: 10px 0px;
+	color: #666666;
+}
+.navigation {
+	color: #666666;
+	text-decoration: none;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+#sidebar ul li {
+	list-style: none;
+}
+#sidebar a {
+	color: #333333;
+	text-decoration: none;
+}
+#sidebar a:hover {
+	color:#0072bc;
+}
+#sidebar ul {
+	margin-bottom: 10px;
+}
+
+/* default */
+.postmetadata {
+	color: #999999;
+	margin:10px 0px;
+}
+.postmetadata a {
+	color: #999999;
+	text-decoration: none;
+}
+#date {
+	padding-bottom: 5px;
+	color:#0072bc;	
+
+}
+#date a {
+	color:#0072bc;	
+	text-decoration: none;
+	font-weight: normal;
+}
+.comment {
+	padding: 10px 0px;
+}
+/* form */
+fieldset {
+	border: 0px;
+}
+#author, #email, #url, #comment, .s {
+	border: 1px solid #999999; 
+	padding: 5px;
+	font-size: 8pt;
+}
+#author, #email, #url, #comment {
+	padding: 5px;
+}
+.s {
+	padding: 3px;
+}
+.submit, .searchsubmit, .preview {
+	background-color: #0072bc;
+	color: #ffffff;
+	border: 1px solid #666666; 
+	font-size: 8pt;
+	padding: 2px;
+	margin: 3px 0px;
+}
+#commentform a {
+	color:#0072bc;	
+	text-decoration: none;
+}
+#commentform a:hover {
+	color:#333333;	
+	text-decoration: underline;
+}
+.bComment {
+	padding: 10px;
+}
+.bCommentText {
+	padding: 5px 0px;
+}
+.bCommentSmallPrint {
+	font-size: 7pt;
+}
+.feedback_feed_msg {
+	padding-bottom: 5px;
+}
+/* ---------------------------------------------------------- */
+#evo_toolbar ul li,
+#evo_toolbar ol li {
+   margin-left: 0;
+}
