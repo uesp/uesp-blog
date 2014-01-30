@@ -1,0 +1,154 @@
+/* Designed by François PLANQUE - http://fplanque.net/ */
+/* Customized by Alex (sam2kb) - Russian b2evolution http://ru.b2evo.net */
+/* Last edit: 2008/03/19 15:35 */
+
+ @import url(../../rsc/css/basic.css);			/* Import basic styles */
+ @import url(../../rsc/css/img.css);			/* Import standard image styles */
+ @import url(../../rsc/css/blog_elements.css);	/* Import standard blog elements styles */
+ @import url(../../rsc/css/forms.css);			/* Import default form styles */
+ @import url(../../rsc/css/comments.css);		/* Import default comment styles */
+
+body { background: #faebd7 url(img/uespbackground.jpg) 0 0 repeat; background-color: #faebd7; padding: 0; margin: 0; color: #000; font: 84% Arial, Helvetica, sans-serif; }
+
+a { color: #555555; }
+a:visited { color: #555555; }
+a:hover { color: #0066CC; }
+
+h1 { margin: 0; padding: 0; color: #000033; font-size: 26px; font-weight:bold; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight:normal; }
+h2 { color: #78a; font-size: 180%; margin: 0; margin: 1ex; border-bottom: 1px solid #78a; }
+h3 { color: #78a; font-size: 120%; }
+h4 { color: #78a; font-size: 110%; }
+
+hr { height: 0; border: 0; border-top: 1px solid #78a; }
+
+td.right { text-align: right }
+table.invisible { margin: 1ex; border-collapse: collapse }
+table.invisible td { padding: 0ex 1ex }
+div.prevnext_post { padding: 10px 0 }
+div.prevnext_post table { margin:0 auto; width: 80%; font-size: 110%; font-weight:bold; text-decoration:underline; }
+div.prevnext_post a { text-decoration:underline; }
+div.input img { display:none }
+
+/* Page */
+div#wrapper { width: 95%; min-width:770px; max-width:1500px; margin: 0 auto; padding: 0; }
+div#page { background-color:#fbefd5; width: 100%; margin: 0 auto; padding: 0; border: 1px solid #aaa; }
+
+/* Containers */
+.PostBottom { margin:0 20px 20px 20px }
+.AfterPosts { margin:20px }
+
+/* Header */
+div#pageHeader { }
+div.header { padding:10px 10px 0 10px }
+div.logo { float:left; vertical-align:bottom; padding-bottom: 5px; }
+div.top_header { margin:0 30px 0 200px }
+div#adsense_top { float:right; }
+
+/* Top menu */
+div.top_menu { clear: both; background: #f5deb3; padding: 1px 0 0 0; border: 1px solid #aaa; border-right: none; border-left: none; }
+div.top_menu ul { background: #f5deb3; margin: 0; padding: 0 14px; height: 26px; }
+div.top_menu li { list-style: none; float: left; height: 21px; }
+
+div.top_menu li a, div.top_menu li a:visited { text-decoration:none; float: left; display: block; height: 15px; padding: 3px 9px 6px 9px; color: #000; font-weight: bold; }/* IE6 */
+html>body div.top_menu li a { text-decoration:none; float: left; display: block; height: 15px; padding: 4px 9px 6px 9px; color: #000; font-weight: bold; }
+
+div.top_menu li a:hover, #coll_list li a:active, #top_menu li.current a { padding: 2px 8px 4px 8px; background-color: #4982b2; color: #fff; background-image: url(img/bar_selected24.png); background-repeat: repeat-x; background-position: top; border: 1px solid #205e95 }/* IE6 */
+html>body div.top_menu li a:hover,html>body  #coll_list li a:active,html>body  #top_menu li.current a { padding: 3px 8px 4px 8px; background-color: #4982b2; color: #fff; background-image: url(img/bar_selected24.png); background-repeat: repeat-x; background-position: top; border: 1px solid #205e95; }
+
+/* Post header */
+.block_item_wrap { margin: 0 0 1em 0 }
+.block_item { width: 100%; }
+.block_item, .browse_side_item { border: 1px solid #9db0bc; background-color: #FDF5E6; padding: 0; }
+.fieldset_title { width: 100%; margin-top: 1ex; background: #f5deb3; border: 1px solid #aaa; border-bottom: none; }
+.fieldset_title_right { padding: 0 5px; background: #f5deb3; }
+.fieldset_title_bg { background: #f5deb3; padding: 0 6px; height: 32px; font-weight: bold; }
+.fieldset_title .action_icon { font-size: 84%; }
+
+/* Posts */
+div.bPosts { }
+div.action_messages { margin: 0 2ex; }
+p.msg_nothing { font-size: 100%; margin: 20px; }
+.PostDate { font-size:16px; padding:5px 0 0 20px; font-weight:bold; color:#78a }
+.bPost, .bPostpublished { clear: both; margin: 0 1.5ex; padding: 0; }
+.bPost ol { margin-left:0; /* IE6 */ }
+.bPost h3 a { color: #333; font-size: 110%; text-decoration: none; }
+.bPost h3 a:hover { text-decoration: underline; }
+.bSmallHead { font-size: 90%; color: #666; padding: 1ex; margin:0 }
+.stars { float:right; padding:5px 10px 0 0 } /* Star Rating */
+
+/* Post content */
+div.PostContent { border: none; padding: 5px 10px; margin: 1ex; }
+.bTitle { color: #1C4559; padding:6px 0 0 0; margin:0; font-size:16px; font-family: Georgia, serif, sans-serif; }
+h3.bTitle a:link, h3.bTitle a:visited { color: #1C4559 }
+.PageLinks { color:#78a; font-size: 120%; font-weight:bold; text-align:center }
+.post_link { font-weight:bold }
+.post_link a, .post_link a:visited  { font-weight:normal; color: #0066CC }
+.bText { margin: 0; font-size: 120%; font-family: Georgia, serif, Verdana, Arial, Helvetica, sans-serif; margin-bottom:0.0002pt; text-align: justify; text-indent: 0pt; overflow:hidden; line-height: 135%; }
+.bText p { margin:8px 0; padding:0 }
+h4.bText { text-align:center; color: #555555; }
+.bText ul li { text-indent:0 }
+div.image_block { text-indent: 0; }
+
+/* After post links */
+.bSmallPrint { clear: both; color: #999; font-size: 90%; font-weight: bold; margin: 1ex 0 2ex 0; padding-top:1.5ex; border-top:#999999 solid 1px }
+.bSmallPrint a { text-decoration:none }
+.permalink, permalink a { text-align:right; float:right; text-decoration:none }
+.bMore { text-align: center; text-indent: 0; }
+.bMore a { font-weight: bold; font-size: 100%; text-indent: 0; text-decoration:none }
+
+/* Contact/feedback forms */
+div.bComment { background-color: #f5deb3; border: 1px solid #aaa; }
+form.bComment { border: none }
+div.bCommentTitle { padding: 5px; }
+div.bCommentSmallPrint { padding: 2px; font-size: 10px; text-align:right; background-color: #FDF5E6; }
+div.bCommentText { background-color: #FDF5E6; padding:7px }
+form.bComment fieldset div.info { padding-left: 10px }
+form.bComment fieldset { padding-left: 10px; border: solid 1px #aaa; background: #f5deb3;}
+input.bComment, textarea.bComment { float:left; background-color: #fff; border: 1px solid #ccc; width: 97%; padding: 2px; margin: 0ex; }
+select.bComment { background-color: #eee; border: 1px solid #ccc; padding: 1px; margin: 0ex; }
+div.comment_toolbars { background-color: #FDF5E6; margin: 0 2px 0 2px; padding: 4px; border-left: solid 1px #aaa; border-right: solid 1px #aaa; }
+
+/* Sidebar */
+.bSideBar { width: 235px; }
+.bSideItem { margin: 2ex; padding: 0 0 2ex 0; border-bottom: 1px solid #ddd; }
+.bSideItem ul { margin-left: 8px; padding-left: 8px; margin-top: 8px; margin-bottom: 8px; }
+.bSideItem ul ul { margin-left: 8px; padding-left: 8px; margin-top: 0px; margin-bottom: 0px; list-style-type: inherit; }
+.bSideItem form { margin-top: 0px; margin-bottom: 0px; }
+.dimmed { color: #aaa; font-size: 84%; }
+input.SearchField { padding: .5ex; width: 96%; }
+
+/* Footer */
+div#pageFooter { clear: both; background: #FDF5E6; margin: 0 auto; padding: 0 0 1ex 0; }
+.copyright { padding:20px 10px; color:#333333; text-align:center; font-size: 12px }
+.copyright a{ text-decoration:none }
+.copyright p { margin:0; padding:10px 0 0 0 }
+
+/* Tabs */
+table.tabs { float:right; line-height:normal; position: relative; top: 2px; z-index: 1; margin: 0 20px 1px 0; list-style: none; font-size: 84% }
+table.tabs td { background:url(img/tabs_left.png) no-repeat -2px top; padding: 0 0 0 6px; border-bottom: 1px solid #9db0bc }
+table.tabs td.first { background:url(img/tabs_left.png) no-repeat left top; width: 2px; padding: 0; border-bottom:1px solid #9db0bc }
+table.tabs td.last { background:url(img/tabs_right_shadow.png) no-repeat right top; width: 4px; padding: 0; border-bottom:1px solid #9db0bc}
+table.tabs td a { display:block; white-space:nowrap; background: url(img/tabs_right.png) no-repeat right top; padding: 5px 11px 4px 4px; text-decoration:none; color:#666 }
+table.tabs td a:hover { /* IE */ text-decoration: underline;}
+table.tabs td.option:hover { /* Won't work in IE6 */ background-position: -2px -150px }
+table.tabs td:hover a { /* Won't work in IE6 */ background-position:100% -150px; /* text-decoration: none; */ }
+table.tabs td.current {	background-position: -2px -150px; border-width: 0; font-weight:bold }
+table.tabs td.current a { background-position:100% -150px; color:#333; padding-bottom:5px }
+table.tabs td.current a:hover { text-decoration: underline; color:#333 }
+
+/* Widget styles */
+.widget_plugin_evo_Calr, .widget_core_coll_title, .widget_core_coll_longdesc { padding: 0; border-bottom: 0; }
+.widget_core_coll_tagline { margin: 20px 0 0 0; color: #78a; font-size: 110%; font-weight:bold }
+.widget_core_coll_title, .widget_core_coll_longdesc { text-align:center }
+.widget_core_coll_title a { text-decoration: none; color: #000033; font-family: Georgia, serif; }
+.widget_core_coll_title h1 { text-align:left }
+
+/* Calendar */
+table.bCalendarTable caption { border: 1px solid #ccc; background-color: #eee; border-bottom: 0; }
+table.bCalendarTable { border: solid 1px #ccc; border-collapse: separate; }
+table.bCalendarTable tfoot td { background-color: #eee; border-top: 1px solid #ccc; }
+table.bCalendarTable tfoot a { text-decoration: none; }
+table.bCalendarTable tfoot a:hover { background-color: #78a; color: #fff; }
+th.bCalendarHeaderCell { color: #abc; }
+#bCalendarToday { background-color: #bce; }
+td.bCalendarLinkPost a, td.bCalendarLinkPost a:visited { color:#1C4559; font-weight:bold; text-decoration:none; background-color:#D1FFC6 }

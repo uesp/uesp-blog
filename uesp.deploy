@@ -1,0 +1,15 @@
+name = uesp.blog
+repository = https://code.google.com/p/uesp.blog/
+ignore = .hg*
+ignore = *.deploy
+
+dest = content1.uesp.net:/home/uesp/blog/www/
+dest = content2.uesp.net:/home/uesp/blog/www/
+
+chown_source = :uespadmin -R ./
+chown_source = apache:uespadmin media
+chmod_source = g+rw,a+r -R ./
+
+create_path = /nome/uesp/blog/cache/
+chown_dest = apache:uespadmin /home/uesp/blog/cache/
+chmod_dest = g+rw,a+r /home/uesp/blog/cache
