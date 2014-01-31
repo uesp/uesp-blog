@@ -557,7 +557,7 @@ $install_path = $basepath.$install_subdir;  // You should not need to change thi
  *
  * @global string $cache_subdir
  */
-$cache_subdir = '../cache/';                // Subdirectory relative to base
+$cache_subdir = 'cache/';                // Subdirectory relative to base
 $cache_path = $basepath.$cache_subdir;   // You should not need to change this
 
 
