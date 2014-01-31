@@ -5,6 +5,7 @@ ignore = *.deploy
 
 dest = content1.uesp.net:/home/uesp/blog/www/
 dest = content2.uesp.net:/home/uesp/blog/www/
+dest = content3.uesp.net:/home/uesp/blog/www/
 
 chown_source = :uespadmin -R ./
 chown_source = apache:uespadmin media
