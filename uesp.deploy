@@ -1,7 +1,10 @@
 name = uesp.blog
 repository = https://code.google.com/p/uesp.blog/
+staged = true
+
 ignore = .hg*
 ignore = *.deploy
+ignore = uesp-blog.conf
 
 dest = content1.uesp.net:/home/uesp/blog/www/
 dest = content2.uesp.net:/home/uesp/blog/www/
@@ -9,9 +12,7 @@ dest = content3.uesp.net:/home/uesp/blog/www/
 
 chown_source = :uespadmin -R ./
 chown_source = apache:uespadmin media
+chown_source = apache:uespadmin cache
 chmod_source = g+rw,a+r -R ./
 
-createpath = /home/uesp/blog/cache/
-
-chown_dest = apache:uespadmin /home/uesp/blog/cache/
-chmod_dest = g+rw,a+r /home/uesp/blog/cache
+manualcopy = all: {source}uesp-blog.conf {destserver}/etc/httpd/conf.d/uesp-blog.conf
